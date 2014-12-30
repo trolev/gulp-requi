@@ -1,0 +1,42 @@
+{
+  "name": "gulp-requi",
+  "version": "0.0.1",
+  "description": "Organization project dependency (//=require or #= require)",
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:trolev/gulp-requi.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "require",
+    "dependencies",
+    "depends",
+    "glob",
+    "js",
+    "coffee"
+  ],
+  "author": {
+    "name": "Alexander Trolev"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.10"
+  },
+  "dependencies": {
+    "glob": "^4.3.2",
+    "through2": "^0.6.3",
+    "lodash": "^2.4.1",
+    "gulp-stream": "0.0.2",
+    "gulp-util": "^3.0.1"
+  },
+  "readme": "# gulp-requi\n\n\n## Install\nnpm install git+ssh://git@bitbucket.org/trolev/gulp-requi.git --save-dev\n\n## Usage\ngulpfile.js\n\n```javascript\nvar requi = require('gulp-requi');\nvar concat = require('gulp-concat');\n\ngulp.task('js', function(){\n  gulp.src(['assets/js/main.js'])\n    .pipe(requi())\n    .pipe(concat())\n    .pipe(gulp.dest('dest/js/'));\n});\n```\n\nmain.js\n\n```javascript\n//= require scripts.coffee\n//= require utils/script3.js\n//= require utils/**/*.*\n//= require utils/script1.js\n//= require !utils/script4.js\n\n    alert('main.js')\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "gulp-requi@0.0.1",
+  "_shasum": "90095f6edd516e2e897fde1e8818d569148674c6",
+  "_resolved": "git+ssh://git@bitbucket.org/trolev/gulp-requi.git#829b8682473050874350a9ab0c8ef41abce26633",
+  "_from": "git+ssh://git@bitbucket.org/trolev/gulp-requi.git#829b868"
+}
