@@ -44,14 +44,8 @@ gulp.task('js', function(){
 ## Release log
 
 
-#### 1.0.3 - 1.0.4
-*  Release
-
-#### 1.0.2
-*  Small changes
-
-#### 1.0.1
-*  Small changes
+#### 1.0.1 - 1.0.4
+* Small changes
 
 #### 1.0.0
 * Fixed readme
