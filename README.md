@@ -2,7 +2,7 @@
 
 
 ## Install
-npm install git+ssh://git@bitbucket.org/trolev/gulp-requi.git --save-dev
+npm install gulp-requi --save-dev
 
 ## Usage
 Example: coffescript + js
@@ -16,7 +16,7 @@ main.js
 //= require utils/script1.js
 //= require !utils/script4.js
 
-    alert('main.js')
+alert('main.js')
 ```
 
 gulpfile.js
@@ -42,6 +42,9 @@ gulp.task('js', function(){
 ```
 
 ## Release log
+
+#### 1.0.1
+*  Small changes
 
 #### 1.0.0
 * Fixed readme

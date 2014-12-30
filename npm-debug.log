@@ -1,0 +1,139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/trolev/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+12 verbose folder .
+13 info prepublish gulp-requi@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/trolev/.npm/1f1177db-tar.lock
+16 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+17 verbose lock tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz /Users/trolev/.npm/4dc91037-587051-0-854270359268412-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+21 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+22 verbose tar unpack /var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+23 silly lockFile d4bf4690-lev-npm-gulp-requi-1-0-0-package tar:///Users/trolev/.npm/gulp-requi/1.0.0/package
+24 verbose lock tar:///Users/trolev/.npm/gulp-requi/1.0.0/package /Users/trolev/.npm/d4bf4690-lev-npm-gulp-requi-1-0-0-package.lock
+25 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+26 verbose lock tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz /Users/trolev/.npm/4dc91037-587051-0-854270359268412-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm extractEntry .npmignore
+30 silly gunzTarPerm extractEntry README.md
+31 silly gunzTarPerm extractEntry index.js
+32 silly gunzTarPerm extractEntry test/main.js
+33 silly gunzTarPerm extractEntry test/fixtures/base.js
+34 silly gunzTarPerm extractEntry test/fixtures/ignore.js
+35 silly gunzTarPerm extractEntry test/fixtures/mix-js-coffee.js
+36 silly gunzTarPerm extractEntry test/fixtures/require-tree-order.js
+37 silly gunzTarPerm extractEntry test/fixtures/js/demo-1.js
+38 silly gunzTarPerm extractEntry test/fixtures/js/demo-2.js
+39 silly gunzTarPerm extractEntry test/fixtures/js/demo-3.js
+40 silly gunzTarPerm extractEntry test/fixtures/js/coffee-1.coffee
+41 silly gunzTarPerm extractEntry test/fixtures/js/coffee-2.coffee
+42 silly lockFile d4bf4690-lev-npm-gulp-requi-1-0-0-package tar:///Users/trolev/.npm/gulp-requi/1.0.0/package
+43 silly lockFile d4bf4690-lev-npm-gulp-requi-1-0-0-package tar:///Users/trolev/.npm/gulp-requi/1.0.0/package
+44 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+45 silly lockFile 4dc91037-587051-0-854270359268412-tmp-tgz tar:///var/folders/58/w49tzwwx4h11d9x7qszpz1s80000gn/T/npm-51487-MrIG8r6q/1419957587051-0.854270359268412/tmp.tgz
+46 silly lockFile 3a52ce78- .
+47 silly lockFile 3a52ce78- .
+48 silly publish { name: 'gulp-requi',
+48 silly publish   version: '1.0.0',
+48 silly publish   description: 'Gulp plugin for implementation asset dependencies (//=require or #= require)',
+48 silly publish   homepage: 'https://github.com/trolev/gulp-requi',
+48 silly publish   repository: { type: 'git', url: 'git@github.com:trolev/gulp-requi.git' },
+48 silly publish   main: 'index.js',
+48 silly publish   scripts: { test: 'mocha' },
+48 silly publish   keywords:
+48 silly publish    [ 'gulp',
+48 silly publish      'require',
+48 silly publish      'dependencies',
+48 silly publish      'depends',
+48 silly publish      'glob',
+48 silly publish      'js',
+48 silly publish      'coffee' ],
+48 silly publish   author: { name: 'Alexander Trolev' },
+48 silly publish   license: 'MIT',
+48 silly publish   devDependencies:
+48 silly publish    { assert: '^1.3.0',
+48 silly publish      'event-stream': '^3.2.1',
+48 silly publish      gulp: '~3.8.10',
+48 silly publish      'gulp-coffee': '^2.2.0',
+48 silly publish      'gulp-concat': '^2.4.3',
+48 silly publish      'gulp-if': '^1.2.5',
+48 silly publish      mocha: '~2.1.0' },
+48 silly publish   dependencies:
+48 silly publish    { glob: '^4.3.2',
+48 silly publish      lodash: '^2.4.1',
+48 silly publish      'gulp-stream': '0.0.2',
+48 silly publish      'gulp-util': '^3.0.1' },
+48 silly publish   readme: '# gulp-requi\n\n\n## Install\nnpm install git+ssh://git@bitbucket.org/trolev/gulp-requi.git --save-dev\n\n## Usage\ngulpfile.js\n\n```javascript\nvar requi = require(\'gulp-requi\');\nvar concat = require(\'gulp-concat\');\n\ngulp.task(\'js\', function(){\n  gulp.src([\'assets/js/main.js\'])\n    .pipe(requi())\n    .pipe(concat())\n    .pipe(gulp.dest(\'dest/js/\'));\n});\n```\n\nmain.js\n\n```javascript\n//= require scripts.coffee\n//= require utils/script3.js\n//= require utils/**/*.*\n//= require utils/script1.js\n//= require !utils/script4.js\n\n    alert(\'main.js\')\n```\n',
+48 silly publish   readmeFilename: 'README.md',
+48 silly publish   _id: 'gulp-requi@1.0.0',
+48 silly publish   _shasum: '90095f6edd516e2e897fde1e8818d569148674c6',
+48 silly publish   _resolved: 'git+ssh://git@bitbucket.org/trolev/gulp-requi.git#829b8682473050874350a9ab0c8ef41abce26633',
+48 silly publish   _from: '.',
+48 silly publish   bugs: { url: 'https://github.com/trolev/gulp-requi/issues' } }
+49 verbose url raw gulp-requi
+50 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-requi' ]
+51 verbose url resolved https://registry.npmjs.org/gulp-requi
+52 info trying registry request attempt 1 at 19:39:47
+53 http PUT https://registry.npmjs.org/gulp-requi
+54 http 403 https://registry.npmjs.org/gulp-requi
+55 verbose headers { date: 'Tue, 30 Dec 2014 16:39:48 GMT',
+55 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+55 verbose headers   'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=60',
+55 verbose headers   'content-length': '3514',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   'x-served-by': 'cache-ams4124-AMS',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1419957587.558423,VS0,VE628',
+55 verbose headers   'keep-alive': 'timeout=10, max=50',
+55 verbose headers   connection: 'Keep-Alive' }
+56 error publish Failed PUT 403
+57 error Error: forbidden cannot modify pre-existing version: 1.0.0
+57 error old={"name":"gulp-requi","version":"1.0.0","description":"Organization project dependency (//=require or #= require)","repository":{"type":"git","url":"git@bitbucket.org:trolev/gulp-requi.git"},"main":"index.js","scripts":{"test":"mocha"},"keywords":["gulp","require","dependencies","depends","glob","js","coffee"],"author":{"name":"Alexander Trolev"},"license":"MIT","devDependencies":{"assert":"^1.3.0","event-stream":"^3.2.1","gulp":"~3.8.10","gulp-coffee":"^2.2.0","gulp-concat":"^2.4.3","gulp-if":"^1.2.5","mocha":"~2.1.0"},"dependencies":{"glob":"^4.3.2","through2":"^0.6.3","lodash":"^2.4.1","gulp-stream":"0.0.2","gulp-util":"^3.0.1"},"_id":"gulp-requi@1.0.0","_shasum":"90095f6edd516e2e897fde1e8818d569148674c6","_resolved":"git+ssh://git@bitbucket.org/trolev/gulp-requi.git#829b8682473050874350a9ab0c8ef41abce26633","_from":".","_npmVersion":"1.4.9","_npmUser":{"name":"trolev","email":"trolev@gmail.com"},"maintainers":[{"name":"trolev","email":"trolev@gmail.com"}],"dist":{"shasum":"cf8a2803009ec9a004e0b03b796e1392a42b1ad1","tarball":"http://registry.npmjs.org/gulp-requi/-/gulp-requi-1.0.0.tgz"}}
+57 error new={"name":"gulp-requi","version":"1.0.0","description":"Gulp plugin for implementation asset dependencies (//=require or #= require)","homepage":"https://github.com/trolev/gulp-requi","repository":{"type":"git","url":"git@github.com:trolev/gulp-requi.git"},"main":"index.js","scripts":{"test":"mocha"},"keywords":["gulp","require","dependencies","depends","glob","js","coffee"],"author":{"name":"Alexander Trolev"},"license":"MIT","devDependencies":{"assert":"^1.3.0","event-stream":"^3.2.1","gulp":"~3.8.10","gulp-coffee":"^2.2.0","gulp-concat":"^2.4.3","gulp-if":"^1.2.5","mocha":"~2.1.0"},"dependencies":{"glob":"^4.3.2","lodash":"^2.4.1","gulp-stream":"0.0.2","gulp-util":"^3.0.1"},"readme":"# gulp-requi\u000a\u000a\u000a## Install\u000anpm install git+ssh://git@bitbucket.org/trolev/gulp-requi.git --save-dev\u000a\u000a## Usage\u000agulpfile.js\u000a\u000a```javascript\u000avar requi = require('gulp-requi');\u000avar concat = require('gulp-concat');\u000a\u000agulp.task('js', function(){\u000a  gulp.src(['assets/js/main.js'])\u000a    .pipe(requi())\u000a    .pipe(concat())\u000a    .pipe(gulp.dest('dest/js/'));\u000a});\u000a```\u000a\u000amain.js\u000a\u000a```javascript\u000a//= require scripts.coffee\u000a//= require utils/script3.js\u000a//= require utils/**/*.*\u000a//= require utils/script1.js\u000a//= require !utils/script4.js\u000a\u000a    alert('main.js')\u000a```\u000a","readmeFilename":"README.md","_id":"gulp-requi@1.0.0","_shasum":"90095f6edd516e2e897fde1e8818d569148674c6","_resolved":"git+ssh://git@bitbucket.org/trolev/gulp-requi.git#829b8682473050874350a9ab0c8ef41abce26633","_from":".","bugs":{"url":"https://github.com/trolev/gulp-requi/issues"},"_npmVersion":"1.4.9","_npmUser":{"name":"trolev","email":"trolev@gmail.com"},"maintainers":[{"name":"trolev","email":"trolev@gmail.com"}],"dist":{"shasum":"6d29e9b9af4c32bea0c571b847826189525b4656","tarball":"http://registry.npmjs.org/gulp-requi/-/gulp-requi-1.0.0.tgz"}}: gulp-requi
+57 error     at RegClient.<anonymous> (/usr/local/Cellar/node/0.10.12/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:273:14)
+57 error     at Request._callback (/usr/local/Cellar/node/0.10.12/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:211:65)
+57 error     at Request.self.callback (/usr/local/Cellar/node/0.10.12/lib/node_modules/npm/node_modules/request/request.js:123:22)
+57 error     at Request.EventEmitter.emit (events.js:98:17)
+57 error     at Request.<anonymous> (/usr/local/Cellar/node/0.10.12/lib/node_modules/npm/node_modules/request/request.js:893:14)
+57 error     at Request.EventEmitter.emit (events.js:117:20)
+57 error     at IncomingMessage.<anonymous> (/usr/local/Cellar/node/0.10.12/lib/node_modules/npm/node_modules/request/request.js:844:12)
+57 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+57 error     at _stream_readable.js:919:16
+57 error     at process._tickCallback (node.js:419:13)
+58 error If you need help, you may report this *entire* log,
+58 error including the npm and node versions, at:
+58 error     <http://github.com/npm/npm/issues>
+59 error System Darwin 14.0.0
+60 error command "node" "/usr/local/bin/npm" "publish"
+61 error cwd /Users/trolev/Projects/gulp-requi
+62 error node -v v0.10.28
+63 error npm -v 1.4.9
+64 verbose exit [ 1, true ]

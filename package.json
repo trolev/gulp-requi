@@ -1,10 +1,11 @@
 {
   "name": "gulp-requi",
-  "version": "1.0.0",
-  "description": "Organization project dependency (//=require or #= require)",
+  "version": "1.0.1",
+  "description": "Gulp plugin for implementation asset dependencies (//=require or #= require)",
+  "homepage": "https://github.com/trolev/gulp-requi",
   "repository": {
     "type": "git",
-    "url": "git@bitbucket.org:trolev/gulp-requi.git"
+    "url": "git@github.com:trolev/gulp-requi.git"
   },
   "main": "index.js",
   "scripts": {
@@ -34,7 +35,6 @@
   },
   "dependencies": {
     "glob": "^4.3.2",
-    "through2": "^0.6.3",
     "lodash": "^2.4.1",
     "gulp-stream": "0.0.2",
     "gulp-util": "^3.0.1"
