@@ -1,0 +1,1 @@
+alert('demo-1.js')

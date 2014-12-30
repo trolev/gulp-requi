@@ -25,7 +25,7 @@ gulpfile.js
 var requi = require('gulp-requi');
 var concat = require('gulp-concat');
 var gulpif = require('gulp-if');
-var gulpif = require('gulp-coffee');
+var coffee = require('gulp-coffee');
 
 gulp.task('js', function(){
   gulp.src(['assets/js/main.js'])
@@ -33,7 +33,7 @@ gulp.task('js', function(){
     .pipe(
       gulpif(
         /[.]coffee$/,
-        plugins.coffee()
+        coffee()
       )
     )
     .pipe(concat())
@@ -42,6 +42,10 @@ gulp.task('js', function(){
 ```
 
 ## Release log
+
+#### 1.0.0
+* Fixed readme
+* Added tests
 
 #### 0.0.1
 * Start
