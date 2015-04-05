@@ -1,7 +1,7 @@
 {
   "name": "gulp-requi",
-  "version": "1.0.5",
-  "description": "Gulp plugin for implementation asset dependencies (//=require or #= require)",
+  "version": "1.0.7",
+  "description": "Gulp plugin, that makes easy assets' dependency management (//=require or #= require)",
   "homepage": "https://github.com/trolev/gulp-requi",
   "repository": {
     "type": "git",

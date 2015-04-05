@@ -4,22 +4,45 @@
 ## Install
 npm install gulp-requi --save-dev
 
-## Usage
-Example: coffescript + js
+## Usage/Example
 
+#### File structure:
+
+```
 main.js
+scripts.coffee
+utils
+   |_ script1.js
+   |_ script2.js
+   |_ script3.js
+   |_ script4.js
+```
+
+#### File main.js, scripts.coffee and utils/script*.js
+
+main.js:
 
 ```javascript
 //= require scripts.coffee
 //= require utils/script3.js
 //= require utils/**/*.*
 //= require utils/script1.js
-//= require !utils/script4.js
 
-alert('main.js')
+alert("main.js")
 ```
 
-gulpfile.js
+ scripts.coffee:
+
+```javascript
+alert "scripts.coffee"
+```
+
+script*.js:
+```javascript
+alert(script1.js);
+```
+
+#### Task
 
 ```javascript
 var requi = require('gulp-requi');
@@ -28,7 +51,7 @@ var gulpif = require('gulp-if');
 var coffee = require('gulp-coffee');
 
 gulp.task('js', function(){
-  gulp.src(['assets/js/main.js'])
+  gulp.src(['main.js'])
     .pipe(requi())
     .pipe(
       gulpif(
@@ -41,10 +64,21 @@ gulp.task('js', function(){
 });
 ```
 
+#### Result
+
+```javascript
+alert("scripts.coffee");
+alert("script3.js)");
+alert("script2.js)");
+alert("script4.js)");
+alert("script1.js)");
+alert("main.js");
+```
+
 ## Release log
 
 
-#### 1.0.1 - 1.0.5
+#### 1.0.1 - 1.0.7
 * Small changes
 
 #### 1.0.0
@@ -76,4 +110,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
