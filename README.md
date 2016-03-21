@@ -27,6 +27,7 @@ main.js:
 //= require utils/script3.js
 //= require utils/**/*.*
 //= require utils/script1.js
+//= require !utils/script2.js
 
 alert("main.js")
 ```
@@ -69,7 +70,6 @@ gulp.task('js', function(){
 ```javascript
 alert("scripts.coffee");
 alert("script3.js)");
-alert("script2.js)");
 alert("script4.js)");
 alert("script1.js)");
 alert("main.js");
@@ -78,7 +78,7 @@ alert("main.js");
 ## Release log
 
 
-#### 1.0.1 - 1.0.7
+#### 1.0.1 - 1.0.8
 * Small changes
 
 #### 1.0.0
