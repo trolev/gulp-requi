@@ -7,11 +7,10 @@ var fs = require('fs'),
 
 const PLUGIN_NAME = 'gulp-requi';
 
-function getGlobPatern(currentFile) {
+function getGlobPatern(currentFile, pattern) {
   var match,
       globPatern = [],
-      globPaternIgnor = [],
-      pattern = /(?:#|\/\/)= require [\s-]*(.*\.*)/g;
+      globPaternIgnor = [];
 
   var content = currentFile.contents.toString('utf8');
 
@@ -28,11 +27,9 @@ function getGlobPatern(currentFile) {
 }
 
 
-function gelFiles(file){
-
+function gelFiles(file, gb){
   var folderPath = path.dirname(file.path),
-      allFiles = [],
-      gb = getGlobPatern(file);
+      allFiles = [];
 
   if (!gb) { return false; }
 
@@ -78,7 +75,7 @@ function gelFiles(file){
       contents: fs.readFileSync(allFiles[n])
     });
 
-    var dependencies = new gelFiles(f);
+    var dependencies = new gelFiles(f, gb);
 
     if (dependencies) {
       streamFiles = streamFiles.concat(dependencies);
@@ -128,8 +125,7 @@ function union(allFiles, currentFiles) {
   return allFiles.concat(currentFiles);
 }
 
-
-function requi() {
+function requi(opts) {
 
   var stream = Stream.Transform({
     objectMode: true
@@ -145,9 +141,15 @@ function requi() {
       throw new gutil.PluginError(PLUGIN_NAME, 'stream not supported');
     }
 
-    var files = gelFiles(file);
+    var pattern = /(?:#|\/\/)= require [\s-]*(.*\.*)/g;
 
-    files = files.concat(file);
+    if (opts && opts.pattern) {
+      pattern = opts.pattern
+    }
+
+    var gb = getGlobPatern(file, pattern),
+        files = gelFiles(file, gb),
+        files = files.concat(file);
 
     if (!files) {
       return cb();
@@ -159,7 +161,6 @@ function requi() {
 
     cb();
   };
-
 
   return stream;
 };

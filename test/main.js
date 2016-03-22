@@ -20,7 +20,9 @@ describe("gulp-requi", function () {
 
   it('mix of coffee and js', function(done) {
     gulp.src(__dirname + '/fixtures/mix-js-coffee.js')
-            .pipe(requi())
+            .pipe(requi({
+              'pattern': /(?:#|\/\/)= require [\s-]*(.*\.*)/g
+            }))
             .pipe(
               gulpif(
                 /[.]coffee$/,

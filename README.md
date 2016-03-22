@@ -75,10 +75,26 @@ alert("script1.js)");
 alert("main.js");
 ```
 
+
+#### Option
+
+`pattern` – default `/(?:#|\/\/)= require [\s-]*(.*\.*)/g` (//= or #=)
+
+```javascript
+...
+  .pipe(requi({
+    'pattern': /(?:#|\/\/)= require [\s-]*(.*\.*)/g
+  }))
+...
+```
+
 ## Release log
 
+#### 1.0.8
+* Added option "pattern"
+* Fixed readme
 
-#### 1.0.1 - 1.0.8
+#### 1.0.1 - 1.0.7
 * Small changes
 
 #### 1.0.0
