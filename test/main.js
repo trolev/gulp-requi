@@ -11,7 +11,23 @@ describe("gulp-requi", function () {
   it('base test', function(done) {
     gulp.src(__dirname + '/fixtures/base.js')
             .pipe(requi())
+            .pipe(
+              gulpif(
+                /[.]coffee$/,
+                coffee()
+              )
+            )
             .pipe(concat('base.js'))
+            .pipe(gulp.dest(__dirname + '/results/'))
+            .pipe(es.wait(function() {
+              done();
+            }));
+  });
+
+  it('all test', function(done) {
+    gulp.src(__dirname + '/fixtures/all.js')
+            .pipe(requi())
+            .pipe(concat('all.js'))
             .pipe(gulp.dest(__dirname + '/results/'))
             .pipe(es.wait(function() {
               done();
@@ -21,7 +37,7 @@ describe("gulp-requi", function () {
   it('mix of coffee and js', function(done) {
     gulp.src(__dirname + '/fixtures/mix-js-coffee.js')
             .pipe(requi({
-              'pattern': /(?:#|\/\/)= require [\s-]*(.*\.*)/g
+              'pattern': /(?:#|\/\/-)= require [\s-]*(.*\.*)/g
             }))
             .pipe(
               gulpif(

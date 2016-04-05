@@ -27,9 +27,11 @@ function getGlobPatern(currentFile, pattern) {
 }
 
 
-function gelFiles(file, gb){
+function gelFiles(file, pattern){
+
   var folderPath = path.dirname(file.path),
-      allFiles = [];
+      allFiles = [],
+      gb = getGlobPatern(file, pattern);
 
   if (!gb) { return false; }
 
@@ -75,7 +77,7 @@ function gelFiles(file, gb){
       contents: fs.readFileSync(allFiles[n])
     });
 
-    var dependencies = new gelFiles(f, gb);
+    var dependencies = new gelFiles(f, pattern);
 
     if (dependencies) {
       streamFiles = streamFiles.concat(dependencies);
@@ -125,6 +127,7 @@ function union(allFiles, currentFiles) {
   return allFiles.concat(currentFiles);
 }
 
+
 function requi(opts) {
 
   var stream = Stream.Transform({
@@ -147,9 +150,9 @@ function requi(opts) {
       pattern = opts.pattern
     }
 
-    var gb = getGlobPatern(file, pattern),
-        files = gelFiles(file, gb),
-        files = files.concat(file);
+    var files = gelFiles(file, pattern);
+
+    files = files.concat(file);
 
     if (!files) {
       return cb();
@@ -161,6 +164,7 @@ function requi(opts) {
 
     cb();
   };
+
 
   return stream;
 };
