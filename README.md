@@ -90,6 +90,9 @@ alert("main.js");
 
 ## Release log
 
+#### 1.0.9
+* Bugs!!!
+
 #### 1.0.8
 * Added option "pattern"
 * Fixed readme
